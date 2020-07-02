@@ -77,3 +77,31 @@ export const getDetailShape = (shape) => {
         payload: shape,
     }
 }
+
+export const changeXShapeDetail = (xInput) => {
+    return {
+        type: Types.CHANGE_X_DETAIL_SHAPE,
+        payload: xInput,
+    }
+}
+
+export const changeYShapeDetail = (yInput) => {
+    return {
+        type: Types.CHANGE_Y_DETAIL_SHAPE,
+        payload: yInput,
+    }
+}
+
+export const changeWidthShapeDetail = (widthInput) => {
+    return {
+        type: Types.CHANGE_WIDTH_DETAIL_SHAPE,
+        payload: widthInput,
+    }
+}
+
+export const changeHeightShapeDetail = (heightInput) => {
+    return {
+        type: Types.CHANGE_HEIGHT_DETAIL_SHAPE,
+        payload: heightInput,
+    }
+}

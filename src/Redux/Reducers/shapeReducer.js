@@ -40,6 +40,7 @@ const shapeReducer = (state = initialState, action) => {
                     newState[i].x = action.payload.x;
                 }
             }
+            return [...newState];
         }
         case Types.MOVE_SHAPE_Y: {
             let newState = [...state];
@@ -48,6 +49,7 @@ const shapeReducer = (state = initialState, action) => {
                     newState[i].y = action.payload.y;
                 }
             }
+            return [...newState];
         }
         case Types.TRANSFORM_WIDTH_SHAPE: {
             let newState = [...state];
@@ -58,6 +60,7 @@ const shapeReducer = (state = initialState, action) => {
                     newState[i].y = action.payload.y;
                 }
             }
+            return [...newState];
         }
         case Types.TRANSFORM_HEIGHT_SHAPE: {
             let newState = [...state];
@@ -68,6 +71,7 @@ const shapeReducer = (state = initialState, action) => {
                     newState[i].y = action.payload.y;
                 }
             }
+            return [...newState];
         }
         default:
             return state;

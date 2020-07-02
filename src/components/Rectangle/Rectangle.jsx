@@ -28,14 +28,12 @@ const Rectangle = ({ shapeProps, isSelected, onSelect, ...props }) => {
                     // console.log("name: ", e.currentTarget.attrs.name, "width: ", e.currentTarget.attrs.width * e.currentTarget.attrs.scaleX, "height: ", e.currentTarget.attrs.height * e.currentTarget.attrs.scaleY);
                     // props.transformWidthShape(e.currentTarget.attrs);
                     // props.transformHeightShape(e.currentTarget.attrs);
-                    // props.getDetailShape(e.currentTarget.attrs);
                     props.getDetailShape(e.currentTarget.attrs)
                 }}
                 onDragMove={e => {
                     // console.log("name: ", e.currentTarget.attrs.name, "x: ", e.currentTarget.attrs.x, "y: ", e.currentTarget.attrs.y);
                     // props.moveShapeX(e.currentTarget.attrs);
                     // props.moveShapeY(e.currentTarget.attrs);
-                    // props.getDetailShape(e.currentTarget.attrs)
                     props.getDetailShape(e.currentTarget.attrs)
                 }}
             />
