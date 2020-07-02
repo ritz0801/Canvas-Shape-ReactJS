@@ -70,7 +70,7 @@ function App(props) {
 
       </div>
       <div className="colume-3">
-        <DetailShape />
+        <DetailShape selectedId={selectedId} />
       </div>
     </div>
   );
