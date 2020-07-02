@@ -30,18 +30,18 @@ const DetailShape = (props) => {
     return (
         <div style={{ textAlign: "center" }} className="detail">
             <h1>Detail</h1>
-            <div className="name">Name: {props.detailShape && (!props.shapes[props.selectedId] ? '' : props.detailShape.name)}</div>
+            <div className="name">Name: {props.detailShape && props.detailShape.name}</div>
             <div className="width-height">
                 <p style={{ marginBottom: '0' }}>Width: </p>
-                <Input type="number" value={props.detailShape && (!props.shapes[props.selectedId] ? '' : Math.ceil(props.detailShape.width * props.detailShape.scaleX))} onChange={handleWidthChange} />
+                <Input type="number" value={props.detailShape && Math.ceil(props.detailShape.width * props.detailShape.scaleX)} onChange={handleWidthChange} />
                 <p style={{ marginBottom: '0' }}>Height: </p>
-                <Input type="number" value={props.detailShape && (!props.shapes[props.selectedId] ? '' : Math.ceil(props.detailShape.height * props.detailShape.scaleY))} onChange={handleHeightChange} />
+                <Input type="number" value={props.detailShape && Math.ceil(props.detailShape.height * props.detailShape.scaleY)} onChange={handleHeightChange} />
             </div>
             <div className="x-y">
                 <p style={{ marginBottom: '0' }}>X: </p>
-                <Input type="number" value={props.detailShape && (!props.shapes[props.selectedId] ? '' : Math.ceil(props.detailShape.x))} onChange={handleXChange} />
+                <Input type="number" value={props.detailShape && Math.ceil(props.detailShape.x)} onChange={handleXChange} />
                 <p style={{ marginBottom: '0' }}>Y: </p>
-                <Input type="number" value={props.detailShape && (!props.shapes[props.selectedId] ? '' : Math.ceil(props.detailShape.y))} onChange={handleYChange} />
+                <Input type="number" value={props.detailShape && Math.ceil(props.detailShape.y)} onChange={handleYChange} />
             </div>
         </div>
     );
